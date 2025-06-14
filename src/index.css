@@ -4,8 +4,9 @@
 
 @layer base {
   body {
-    @apply bg-Dark-cyan min-h-screen bg-no-repeat bg-[url('../src/assets/images/bg-pattern-top.svg'),_url('../src/assets/images/bg-pattern-bottom.svg')] bg-[position:top_-40rem_left_-40rem,_bottom_-35rem_right_-45rem] md:bg-[position:top_-30rem_left_-20rem,_bottom_-30rem_right_-20rem];
+    @apply bg-Dark-cyan bg-no-repeat bg-[url('../src/assets/images/bg-pattern-top.svg'),_url('../src/assets/images/bg-pattern-bottom.svg')] md:bg-position-[left_-15rem_bottom_20rem,right_-15rem_bottom_-35rem] bg-position-[top_-40rem_left_-40rem,bottom_-45rem_left_5rem];
   }
+  /* bg-[position:top_-40rem_left_-40rem,_bottom_-35rem_right_-45rem] md:bg-[position:top_-30rem_left_-20rem,_bottom_-30rem_right_-20rem] */
 }
 
 @theme {
