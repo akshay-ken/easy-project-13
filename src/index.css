@@ -4,39 +4,8 @@
 
 @layer base {
   body {
-    min-height: 100vh;
-    @apply bg-Dark-cyan;
-    background-image: url("../src/assets/images/bg-pattern-top.svg"),
-      url("../src/assets/images/bg-pattern-bottom.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 50% 60%, 10% 10%;
-    background-position: bottom right, top left;
+    @apply bg-Dark-cyan min-h-screen bg-no-repeat bg-[url('../src/assets/images/bg-pattern-top.svg'),_url('../src/assets/images/bg-pattern-bottom.svg')] bg-[position:top_-40rem_left_-40rem,_bottom_-35rem_right_-45rem] md:bg-[position:top_-30rem_left_-20rem,_bottom_-30rem_right_-20rem];
   }
-  /* 
-  body::before,
-  body::after {
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: 200% 200%;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  body::before {
-    top: 0;
-    left: 0;
-    background-image: url("../src/assets/images/bg-pattern-top.svg");
-    background-position: bottom right;
-  }
-  body::after {
-    bottom: 0;
-    right: 0;
-    background-image: url("../src/assets/images/bg-pattern-bottom.svg");
-    background-position: top left;
-  } */
 }
 
 @theme {
